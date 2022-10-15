@@ -9,8 +9,8 @@ local beautiful = require('beautiful')
 local modkey = "Mod4"
 local altkey = "Mod1"
 
-local machina = require("machina.methods")
-local backham = require("machina.backham")
+local machina = require(... .. ".methods")
+local backham = require(... .. ".backham")
 local focus_by_direction = machina.focus_by_direction
 local shift_by_direction = machina.shift_by_direction
 local expand_horizontal = machina.expand_horizontal

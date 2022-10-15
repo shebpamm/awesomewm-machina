@@ -1,9 +1,9 @@
 
 --+ allows automatically focusing back to the previous client
 --> on window close (unmanage) or minimize.
-
+local this_package = ... and (...):match("(.-)[^%.]+$") or ""
 local awful = require("awful")
-local get_client_info = require("machina.methods").get_client_info
+local get_client_info = require(this_package .. "methods").get_client_info
 
 -------------------------------------------------------------------> methods ;
 

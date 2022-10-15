@@ -1,5 +1,6 @@
 
 --------------------------------------------------------- dependencies  -- ;
+local this_package = ... and (...):match("(.-)[^%.]+$") or ""
 
 local naughty = require('naughty')
 local gears = require("gears")
@@ -7,9 +8,9 @@ local awful = require("awful")
 local beautiful = require('beautiful')
 local grect = gears.geometry.rectangle
 
-local tabs = require("machina.tabs")
-local geoms = require("machina.geoms")
-local helpers = require("machina.helpers")
+local tabs = require(this_package .. "tabs")
+local geoms = require(this_package .. "geoms")
+local helpers = require(this_package .. "helpers")
 
 local get_client_ix = helpers.get_client_ix
 local getlowest = helpers.getlowest
